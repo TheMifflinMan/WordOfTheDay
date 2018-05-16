@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var wordLabel: UILabel!
-    var string: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
