@@ -46,7 +46,7 @@ class NetworkManager: NSObject {
         let appId = "e054a255"
         let appKey = "539a60447b7dd113f1d9eba18a132b93"
         let language = "en"
-        let filters = "registers=Rare;domains=Art"
+        let filters = "domains=Art"
         let url = URL(string: "https://od-api.oxforddictionaries.com:443/api/v1/wordlist/\(language)/\(filters)")!
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -59,7 +59,12 @@ class NetworkManager: NSObject {
                 let data = data,
                 let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
                 print(response)
-                print(jsonData)
+                //print(jsonData);
+                let json = JSON(object: jsonData)
+                print(json["results"]);
+                for word in json["results"] {
+                    
+                }
             } else {
                 print(error!)
                 print(NSString.init(data: data!, encoding: String.Encoding.utf8.rawValue)!)
