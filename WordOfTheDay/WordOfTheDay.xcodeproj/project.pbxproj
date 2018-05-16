@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9A377A320ACB040009195F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A377A220ACB040009195F3 /* NetworkManager.swift */; };
 		E8CD09B620ACA50A0089231D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CD09B520ACA50A0089231D /* AppDelegate.swift */; };
 		E8CD09B820ACA50A0089231D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CD09B720ACA50A0089231D /* ViewController.swift */; };
 		E8CD09BB20ACA50A0089231D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CD09B920ACA50A0089231D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9A377A220ACB040009195F3 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E8CD09B220ACA50A0089231D /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CD09B520ACA50A0089231D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8CD09B720ACA50A0089231D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		E8CD09B420ACA50A0089231D /* WordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
+				A9A377A220ACB040009195F3 /* NetworkManager.swift */,
 				E8CD09B520ACA50A0089231D /* AppDelegate.swift */,
 				E8CD09B720ACA50A0089231D /* ViewController.swift */,
 				E8CD09B920ACA50A0089231D /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A377A320ACB040009195F3 /* NetworkManager.swift in Sources */,
 				E8CD09B820ACA50A0089231D /* ViewController.swift in Sources */,
 				E8CD09B620ACA50A0089231D /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +308,7 @@
 				E8CD09C620ACA50A0089231D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
