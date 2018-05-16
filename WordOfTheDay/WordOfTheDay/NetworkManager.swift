@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import GameKit
 
 class NetworkManager: NSObject {
     
-   
+   var listOfWords = [String]()
+    
     static func requestGet() {
         
         
@@ -59,17 +61,20 @@ class NetworkManager: NSObject {
                 let data = data,
                 let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
                 print(response)
-                //print(jsonData);
                 let json = JSON(object: jsonData)
-                print(json["results"]);
                 for word in json["results"] {
-                    
+                    for(index, value) in word.1.enumerated() {
+                        if(index == 1) {
+                            self.listOfWords.append(String(describing: value.1))
+                        }
+                    }
                 }
             } else {
                 print(error!)
                 print(NSString.init(data: data!, encoding: String.Encoding.utf8.rawValue)!)
             }
+            let n = GKRandomSource.sharedRandom().nextInt(upperBound: self.listOfWords.count)
+            print(self.listOfWords[n]);
         }).resume()
     }
-    
 }
